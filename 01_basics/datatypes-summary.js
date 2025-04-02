@@ -31,5 +31,20 @@ const myfunction=function()
   console.log("Hello World");
 }
 
+//stack(Primitive), Heap(Non-Primitive)
 
+let myYoutubename = "deepakgurjar.com"
+let anothername = myYoutubename
+anothername="chaiaurcode"
+console.log(myYoutubename);
+console.log(anothername);
 
+let userOne = {
+  email: "user@google.com",
+  upi: "user@ybl"
+}
+let userTwo=userOne 
+
+userTwo.email="deepak@google.com" //We can access the value of an object through dot(.)
+console.log(userOne.email)
+console.log(userTwo.email)
