@@ -28,7 +28,7 @@ const obj2 = {3:"f"}
 //const obj3 = {...obj1,...obj2} //Spread Operator (...) se combine karna — sabse clean tareeka
 //console.log(obj3)
 
-const User = [         // Array  ke andar multiple objects 
+const User = [         // Array  ke andar multiple objects database mein jab data aata hai toh esi form mein raheta hai
     {
 
     },
