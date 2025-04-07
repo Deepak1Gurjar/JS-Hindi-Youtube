@@ -43,8 +43,28 @@ const User = [         // Array  ke andar multiple objects database mein jab dat
 ]
 
 User[1].email
-console.log(tinderUser)
-console.log(Object.keys(tinderUser)) // acessing the keys 
-console.log(Object.values(tinderUser)) // acessing the values
-console.log(Object.entries(tinderUser))
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+// console.log(tinderUser)
+// console.log(Object.keys(tinderUser)) // acessing the keys 
+// console.log(Object.values(tinderUser)) // acessing the values
+// console.log(Object.entries(tinderUser))
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+//Destructuring
+
+const course = {
+    coursename : "js in Hindi",
+    price : 999,
+    courseInstructor :"hitesh"
+}
+
+const{courseInstructor:instructor} = course
+console.log(instructor)
+
+// JSoN structure  // JsoN formatter website
+
+// {
+//     "name" : "Deepak",  // usually keys bhi ek string hoti hai or uski values bhi ek string hoti hai
+//     "coursename":"JS in India",
+//     "price":"free"
+// }
+
