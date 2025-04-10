@@ -3,7 +3,7 @@ let a =50; // global scope
 if(true){  // Everything that I return inside the if block it is treted as a block scope
 let a=10
 const b=20
-var c= 30
+var c= 30 //var has a completely global scope
 //console.log("INNER:",a) // block scope
 }
 //console.log(a);
