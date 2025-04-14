@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: #ffff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+
+<script>  //Java script ko app alag file mein likhe ya yahi likh de koi fark nhi padta
+const parent=document.querySelector('.parent')  // yaha pe mene Javascript ka use kar ke ek parent variable ke andar document.querrySelector('.class name') mere html page mein jo class hai uske ander ke sare elements ko show kiya hai 
+console.log(parent);
+console.log(parent.children); //parent class ke andar kitne child class hai 
+console.log(parent.children[1].innerHTML); //parent class ke andar children class ke 1st index ke element ko access kiya hai or .innerHTML se usko print kiya hai
+
+for (let i = 0; i < parent.children.length; i++) {
+    console.log(parent.children[i].innerHTML); 
+}
+parent.children[0].style.color="Red"
+console.log(parent.firstElementChild); // parent Class ke ander se children class ke first Element ko print karvya hai
+console.log(parent.lastElementChild);  // parent Class ke ander se children class ke last Element ko print karvya hai
+const dayOne = document.querySelector('.day') //child se parent pe bhi shift kar skte hai
+console.log(dayOne);
+console.log(dayOne.parentElement); //child se parent pe bhi shift kar skte hai 
+console.log(dayOne.nextElementSibling); //yaha pe parentElement ke jo bhi next sibling hai usko print kiya hai
+console.log("NODES: ",parent.childNodes);
+</script>
+</html>
