@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code</title>
+</head>
+<body style="background-color: #212121; color:#fff;">
+    <ul class="language"> <!--Yaha ek unordered list (<ul>) hai jiska class hai "language"-->
+        <li>
+           JavaScript  <!--Aur uske andar ek list item (<li>) hai — "JavaScript" likha hai.-->
+        </li>
+    </ul>
+</body>
+<script>
+    function addlanguage (langName) {      //Ek function define kiya gaya hai jiska naam hai addlanguage
+      const li = document.createElement('li');
+      li.innerHTML =`${langName}`
+      document.querySelector('.language').
+      appendChild(li)
+    }
+    addlanguage("python")
+    addlanguage("Java")
+
+    function addOptilLanguage (langName) {
+        const li =document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptilLanguage("c++")
+
+
+    // Edit 
+    const secondlang=document.querySelector("li:nth-child(2)") //yha pe li ke andar second element python ko edit kiya hai
+    //secondlang.innerHTML="Mojo"
+    const newli=document.createElement('li')
+    newli.textContent = "mojo"
+    secondlang.replaceWith(newli)
+
+    //edit
+    const firstlang=document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>TypeScript</li>'
+    
+    //remove
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+</script>
+</html>
