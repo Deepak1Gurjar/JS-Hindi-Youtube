@@ -7,7 +7,7 @@ const scoreValue=100.3;
 const isLoggedIn=false;
 const outsideTemp=null;
 let userEmail;
-const id= Symbol('123')
+const id= Symbol('123')   // In this we use two different variables as id & anotherId and store same data in both using symbol data type that is 123 but if we check this using triple equalto operator than it will result false even though both variables having same datatype and values these is because that the symbol data type returns different-different values 
 const anotherId=Symbol('123')
 console.log(id === anotherId);
 const bigNumber = 1233568589
@@ -21,30 +21,47 @@ const bigbigNumber = 387464348748337557n // n is written to represent that the g
 const heros = ["Shaktimaan","Naagraj","Doga"] //Arrays
 console.log(heros);
 
-let myobj={          // Objects
+let myobj={          // Objects declaration
   name: "Deepak",
   age: 23,
 }
 
-const myfunction=function()
+const myfunction=function() // function declaration
 {
   console.log("Hello World");
 }
 
-//stack(Primitive), Heap(Non-Primitive)
+//stack(Primitive)
+//Heap(Non-Primitive) heap ke andar hame reference milta hai original value ka esliye heap ke andar jo bhi change karenge woh original value mein change karega
+
 
 let myYoutubename = "deepakgurjar.com"
 let anothername = myYoutubename
-anothername="chaiaurcode"
+anothername="chaiaurcode"      // change in copy value not in original value beacuse in stack copy of original value is given not the reference of original value
 console.log(myYoutubename);
 console.log(anothername);
 
-let userOne = {
-  email: "user@google.com",
+let userOne = {                //Heap ke andar reference diya jata hai. Dono variables ek hi object ko point karte hain.
+  email: "user@google.com", 
   upi: "user@ybl"
 }
 let userTwo=userOne 
 
-userTwo.email="deepak@google.com" //We can access the value of an object through dot(.)
+userTwo.email="deepak@google.com" //We can access the key or value of an object through dot(.)
 console.log(userOne.email)
 console.log(userTwo.email)
+
+
+
+// let userthree =
+// {
+//   userId : "deepak123",
+//   dob : 12/6/25
+// }
+
+// let userfour=userthree
+
+// userfour.userId="kapil123"
+// console.log(userthree.userId)
+// console.log(userfour.userId)
+
