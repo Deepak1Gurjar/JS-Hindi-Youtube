@@ -10,11 +10,11 @@ console.log(valueInNumber);
 // "33abc"=> NaN (Not a Number) but its data type is a number
 // true=>1 false=>=0 // if we convert a boolean value into a number than if boolean value is true in number it will be represented as 1 and if boolean value is false than it will be represented as 0 in number as Conversion Operation (typeconverstion)
 
-// let isLoggedIn = "" //boolean value will we false // ""=>false
-// let isLoggedIn = "Deepak" //boolean value will we true // "Deepak" =>true
+// let isLoggedIn = "" //boolean value will we false if we pass an empty string // ""=>false
+// let isLoggedIn = "Deepak" //boolean value will we true if we pass something as a string // "Deepak" =>true
 let isLoggedIn = 1 //boolean value will we true  // 1=>true 0=>false
 
-let booleanIsLoggedIn = Boolean(isLoggedIn)
+let booleanIsLoggedIn = Boolean(isLoggedIn) // Number to Boolean conversion
 console.log(booleanIsLoggedIn);
  
 let someNumber = 33
