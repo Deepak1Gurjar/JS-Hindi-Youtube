@@ -45,7 +45,8 @@ console.log(1+"2");  // Addition of Number and String
 console.log("1"+2+2); // Additon of String,Number and Number
 console.log(1+"2"+2); // Addition of Number,String and Number
 console.log(1+2+"2"); // Addition of Number,Number and String
-console.log((3+4)*5/3);
+console.log((3+4)*5/3); // If we wanted to execute operations as per our choice based on additon,subtraction,multiplication,Division on operands then we have to write them in a parenthesis ()  
+
 console.log(+true);
 console.log(+"");
 let gamecounter=100;
