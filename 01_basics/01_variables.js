@@ -12,4 +12,4 @@ console.log(accountId);
 /*
    Prefer not to use var because of issue in block scope and functional scope
 */
-console.table([accountId, accountEmail, accountcity, accountstate])
+console.table([accountId, accountEmail, accountcity, accountstate])  //just another way showing output in js using console.log along with table
