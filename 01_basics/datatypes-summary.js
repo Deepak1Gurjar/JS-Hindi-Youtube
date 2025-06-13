@@ -48,7 +48,7 @@ let userOne = {                //Heap ke andar reference diya jata hai. Dono var
 let userTwo=userOne 
 
 userTwo.email="deepak@google.com" //We can access the key or value of an object through dot(.)
-console.log(userOne.email)
+console.log(userOne.email)  // to access the data inside the object we have to enter object name then key name along with dot operator in js
 console.log(userTwo.email)
 
 
