@@ -56,10 +56,10 @@ console.log(gamecounter);
 
 let x=3;  //Post Increment //Postfix Operator
 const y=x++; // in this first the value of Y remains same 3 and then the value of x is incresed by 1 that will become 4
-console.log(y,x);
+console.log(`y:${y},x:${x}`);
 
 let a=3; // Pre Increment //Prefix Operator
 const b=++a;   // in this first the value of b is increased by 1 that will become 4 and then the value of a is incresed by 1 that will become 4
-console.log(b,a);
+console.log(`b:${b},a:${a}`); // using backticks dollar sign along with curely brackets just another way of printing output on the console
 
 
