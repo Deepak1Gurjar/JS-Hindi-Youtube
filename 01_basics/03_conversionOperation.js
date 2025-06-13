@@ -8,7 +8,7 @@ console.log(valueInNumber);
 
 // "33"=>33 // Convertion of an string value into a number value is possible
 // "33abc"=> NaN (Not a Number) but its data type is a number
-// true=>1 false=>=0
+// true=>1 false=>=0 // if we convert a boolean value into a number than if boolean value is true in number it will be represented as 1 and if boolean value is false than it will be represented as 0 in number as Conversion Operation (typeconverstion)
 
 // let isLoggedIn = "" //boolean value will we false // ""=>false
 // let isLoggedIn = "Deepak" //boolean value will we true // "Deepak" =>true
