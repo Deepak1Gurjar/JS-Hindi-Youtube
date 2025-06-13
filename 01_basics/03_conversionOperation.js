@@ -49,16 +49,17 @@ console.log((3+4)*5/3); // If we wanted to execute operations as per our choice 
 
 console.log(+true);
 console.log(+"");
-let gamecounter=100;
+
+let gamecounter=100; //Pre Increment
 ++gamecounter;
 console.log(gamecounter);
 
-let x=3;  //Post Increment
-const y=x++;
+let x=3;  //Post Increment //Postfix Operator
+const y=x++; // in this first the value of Y remains same 3 and then the value of x is incresed by 1 that will become 4
 console.log(y,x);
 
-let a=3; // Pre Increment
-const b=++a;
+let a=3; // Pre Increment //Prefix Operator
+const b=++a;   // in this first the value of b is increased by 1 that will become 4 and then the value of a is incresed by 1 that will become 4
 console.log(b,a);
 
 
