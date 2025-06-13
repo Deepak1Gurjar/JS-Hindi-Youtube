@@ -6,8 +6,8 @@ let valueInNumber = Number(score)
 console.log(typeof (valueInNumber));
 console.log(valueInNumber); 
 
-// "33"=>33
-// "33abc"=> NaN (Not a Number)
+// "33"=>33 // Convertion of an string value into a number value is possible
+// "33abc"=> NaN (Not a Number) but its data type is a number
 // true=>1 false=>=0
 
 // let isLoggedIn = "" //boolean value will we false // ""=>false
