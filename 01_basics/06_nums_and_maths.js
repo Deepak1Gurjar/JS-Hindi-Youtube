@@ -1,10 +1,10 @@
 // ++++++++++++++++++++++ NUMBERS ++++++++++++++++++++++++
 const score = 400
 console.log(score);
-const balance= new Number(100);
+const balance= new Number(100); 
 console.log(balance);
 console.log(balance.toString().length)
-console.log(balance.toFixed(2)) // toFixed used to reduce the precision value
+console.log(balance.toFixed(2)) // toFixed used to reduce the precision value it means the decimal value after 100 will be 100.00 
 
 const otherNumber=123.8966
 console.log(otherNumber.toPrecision(4));
