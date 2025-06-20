@@ -7,7 +7,7 @@ const tinderUser2 ={} // It is a non-singleton object
 tinderUser.id = "abc123"
 tinderUser.name = "Deepak"
 tinderUser.isLoggedIn = false
-//console.log(tinderUser)
+console.log(tinderUser)
 
 const regularUser = {
     email : "Sam@gmail.com",
@@ -18,7 +18,7 @@ const regularUser = {
         }
         }
 }
-//console.log(regularUser.fullname.Userfullname.firstname) // Accessing multiple objects inside main object 
+console.log(regularUser.fullname.Userfullname.firstname) // Accessing multiple objects inside main object 
 
 const obj1 = {1:"a", 2:"d",}
 const obj2 = {3:"f"}
@@ -43,11 +43,11 @@ const User = [         // Array  ke andar multiple objects database mein jab dat
 ]
 
 User[1].email
-// console.log(tinderUser)
-// console.log(Object.keys(tinderUser)) // acessing the keys 
-// console.log(Object.values(tinderUser)) // acessing the values
-// console.log(Object.entries(tinderUser))
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+ console.log(tinderUser)
+ console.log(Object.keys(tinderUser)) // acessing the keys 
+ console.log(Object.values(tinderUser)) // acessing the values
+ console.log(Object.entries(tinderUser))
+ console.log(tinderUser.hasOwnProperty('isLoggedIn'))
 
 //Destructuring
 
@@ -57,7 +57,7 @@ const course = {
     courseInstructor :"hitesh"
 }
 
-const{courseInstructor:instructor} = course
+const{courseInstructor:instructor} = course //destructuring of object yaha pe courseInstructor ko instructor name se destructure kiya hai
 console.log(instructor)
 
 // JSoN structure  // JsoN formatter website
