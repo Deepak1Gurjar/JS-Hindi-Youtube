@@ -31,7 +31,7 @@ console.log(typeof JSuser.mySym) // JSuser.mySym likhoge toh undefined aayega, k
     console.log("Hello JS user");
  }
 JSuser.greetingTwo= function(){
-    console.log(`Hello JS user,${this.name}`);
+    console.log(`Hello JS user,${this.name}`); //Jab bhi Same object ko reference karna hai tabh likh skte hai this 
  }
  console.log(JSuser.greeting());
 console.log(JSuser.greetingTwo());
